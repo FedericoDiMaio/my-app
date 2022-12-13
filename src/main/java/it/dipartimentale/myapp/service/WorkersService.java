@@ -1,6 +1,6 @@
 package it.dipartimentale.myapp.service;
 
-import it.dipartimentale.myapp.model.TeamLeader;
+import it.dipartimentale.myapp.model.Workers;
 import it.dipartimentale.myapp.service.common.AbstractCrudService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.repository.MongoRepository;
@@ -12,14 +12,13 @@ import org.springframework.stereotype.Service;
  * @Project : my-app
  */
 @Service
-public class TeamLeaderService extends AbstractCrudService<TeamLeader> {
+public class WorkersService extends AbstractCrudService<Workers> {
 
     @Autowired
-    protected TeamLeaderService(MongoRepository<TeamLeader, String> repository) {
+    protected WorkersService(MongoRepository<Workers, String> repository) {
         super(repository);
     }
 
-    public void deleteById(String id) {                 //cancello lavoro a worker
-        super.deleteById(id);
-    }
+
+
 }
