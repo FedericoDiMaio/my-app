@@ -1,6 +1,5 @@
 package it.dipartimentale.myapp.repository;
 
-import it.dipartimentale.myapp.model.DepartmentHead;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 /**
@@ -8,6 +7,5 @@ import org.springframework.data.mongodb.repository.MongoRepository;
  * @date : 13/12/2022
  * @Project : my-app
  */
-
-public interface RepositoryDepartmentHeadService extends MongoRepository<DepartmentHead, String> {
+public interface IRepository <Entity, id> extends MongoRepository<Entity, id> {
 }

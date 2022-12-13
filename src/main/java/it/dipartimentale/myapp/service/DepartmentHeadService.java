@@ -1,12 +1,13 @@
 package it.dipartimentale.myapp.service;
 
-import it.dipartimentale.myapp.model.DepartmentHead;
-import it.dipartimentale.myapp.model.utils.AssemblySheet;
+
+import it.dipartimentale.myapp.dto.DepartmentHeadDto;
+import it.dipartimentale.myapp.model.DepartmentHeadEntity;
+import it.dipartimentale.myapp.repository.RepositoryDepartmentHead;
 import it.dipartimentale.myapp.service.common.AbstractCrudService;
-import org.aspectj.apache.bcel.Repository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * @author : Federico Di Maio
@@ -14,14 +15,41 @@ import org.springframework.stereotype.Service;
  * @Project : my-app
  */
 @Service
-public class DepartmentHeadService extends AbstractCrudService<DepartmentHead> {
+public class DepartmentHeadService extends AbstractCrudService <DepartmentHeadEntity, RepositoryDepartmentHead> {
 
 
-    protected DepartmentHeadService(MongoRepository<DepartmentHead, String> repository) {
-        super(repository);
+    public DepartmentHeadService(RepositoryDepartmentHead repositoryDepartmentHead){
+        super(repositoryDepartmentHead);
     }
 
-    public AssemblySheet insert() {                         //crea scheda di lavoro
-        return new AssemblySheet();
+
+    @Override
+    public DepartmentHeadEntity findByIdAndUsername(String id, String username) {
+        return null;
+    }
+
+    @Override
+    public List<DepartmentHeadEntity> findByUsername(String username) {
+        return null;
+    }
+
+    @Override
+    public List<DepartmentHeadEntity> find() {
+        return null;
+    }
+
+    @Override
+    public DepartmentHeadEntity update(DepartmentHeadEntity entity) {
+        return null;
+    }
+
+    @Override
+    public void deleteById(String id) {
+
+    }
+
+    @Override
+    public void delete(DepartmentHeadEntity entity) {
+
     }
 }

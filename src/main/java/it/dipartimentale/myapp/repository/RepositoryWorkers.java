@@ -1,6 +1,6 @@
 package it.dipartimentale.myapp.repository;
 
-import it.dipartimentale.myapp.model.Workers;
+import it.dipartimentale.myapp.dto.Workers;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 /**

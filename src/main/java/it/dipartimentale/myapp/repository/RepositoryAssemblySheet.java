@@ -1,6 +1,6 @@
 package it.dipartimentale.myapp.repository;
 
-import it.dipartimentale.myapp.model.utils.AssemblySheet;
+import it.dipartimentale.myapp.dto.utils.AssemblySheet;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 /**

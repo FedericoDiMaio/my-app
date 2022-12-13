@@ -1,6 +1,6 @@
 package it.dipartimentale.myapp.repository;
 
-import it.dipartimentale.myapp.model.TeamLeader;
+import it.dipartimentale.myapp.dto.TeamLeader;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 /**

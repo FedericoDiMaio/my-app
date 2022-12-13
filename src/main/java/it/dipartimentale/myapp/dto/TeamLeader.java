@@ -1,6 +1,6 @@
-package it.dipartimentale.myapp.model;
+package it.dipartimentale.myapp.dto;
 
-import it.dipartimentale.myapp.model.utils.AssemblySheet;
+import it.dipartimentale.myapp.dto.utils.AssemblySheet;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 

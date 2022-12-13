@@ -1,4 +1,4 @@
-package it.dipartimentale.myapp.model.utils;
+package it.dipartimentale.myapp.dto.utils;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;

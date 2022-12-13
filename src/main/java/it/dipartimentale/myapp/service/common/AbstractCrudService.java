@@ -1,45 +1,29 @@
 package it.dipartimentale.myapp.service.common;
 
+
+import it.dipartimentale.myapp.model.pojo.CrudPojoAb;
+import it.dipartimentale.myapp.repository.IRepository;
+import org.aspectj.apache.bcel.Repository;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-
-import java.util.List;
 
 /**
  * @author : f.dimaio
  * @date : 13/12/2022
  * @Project : my-app
  */
-public abstract class AbstractCrudService<T> {
+public abstract class AbstractCrudService <T extends CrudPojoAb,Repository extends IRepository<T, String>> implements CRUDService<T> {
 
-    private final MongoRepository<T, String> repository;
+    private Repository repository;
 
-    protected AbstractCrudService(MongoRepository<T, String> repository) {
+    protected AbstractCrudService(Repository repository) {
         this.repository = repository;
+
     }
 
-    public List<T> readAll() {
-        return repository.findAll();
-    }
-
-    public T read(String id) {
-        return repository.findById(id).orElse(null);
-    }
-
-    public T update(T entity) {
-        return repository.save(entity);
-    }
-
-    public T insert(T entity) {
-        return repository.insert(entity);
-    }
-
-    public void delete(T entity) {
-        repository.delete(entity);
-    }
-
-    public void deleteById(String id) {
-        repository.deleteById(id);
+    @Override
+    public T insert(T Entity) {
+        return this.insert(Entity);
     }
 
 

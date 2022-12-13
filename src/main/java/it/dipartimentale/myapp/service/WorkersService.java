@@ -1,9 +1,6 @@
 package it.dipartimentale.myapp.service;
 
-import it.dipartimentale.myapp.model.Workers;
-import it.dipartimentale.myapp.service.common.AbstractCrudService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.mongodb.repository.MongoRepository;
+
 import org.springframework.stereotype.Service;
 
 /**
@@ -12,12 +9,8 @@ import org.springframework.stereotype.Service;
  * @Project : my-app
  */
 @Service
-public class WorkersService extends AbstractCrudService<Workers> {
+public class WorkersService {
 
-    @Autowired
-    protected WorkersService(MongoRepository<Workers, String> repository) {
-        super(repository);
-    }
 
 
 
