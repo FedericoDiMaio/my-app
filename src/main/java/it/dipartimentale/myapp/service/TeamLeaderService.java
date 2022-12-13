@@ -6,6 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Service;
 
+/**
+ * @author : Federico Di Maio
+ * @date : 13/12/2022
+ * @Project : my-app
+ */
 @Service
 public class TeamLeaderService extends AbstractCrudService<TeamLeader> {
 
@@ -14,7 +19,7 @@ public class TeamLeaderService extends AbstractCrudService<TeamLeader> {
         super(repository);
     }
 
-    public void delete(String id) {
-        super.delete(id);
+    public void deleteById(String id) {
+        super.deleteById(id);
     }
 }

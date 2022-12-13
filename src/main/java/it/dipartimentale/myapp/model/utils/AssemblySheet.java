@@ -5,6 +5,11 @@ import lombok.Data;
 import java.io.Serializable;
 import java.util.List;
 
+/**
+ * @author : Federico Di Maio
+ * @date : 13/12/2022
+ * @Project : my-app
+ */
 
 @Data
 public class AssemblySheet implements Serializable {

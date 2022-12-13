@@ -1,12 +1,17 @@
 package it.dipartimentale.myapp.model;
 
+import it.dipartimentale.myapp.model.utils.AssemblySheet;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 
 import java.io.Serializable;
 import java.util.List;
 
-
+/**
+ * @author : Federico Di Maio
+ * @date : 13/12/2022
+ * @Project : my-app
+ */
 @Data
 public class TeamLeader implements Serializable {
     @Id
@@ -18,6 +23,6 @@ public class TeamLeader implements Serializable {
     private String number;
     private String email;
     private List<Workers> WorkersSet;
-
+    private List<AssemblySheet> assemblySheetList;
 
 }

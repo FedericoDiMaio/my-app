@@ -5,7 +5,11 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.List;
 
-
+/**
+ * @author : f.dimaio
+ * @date : 13/12/2022
+ * @Project : my-app
+ */
 public abstract class AbstractCrudService<T> {
 
     private final MongoRepository<T, String> repository;
@@ -34,7 +38,7 @@ public abstract class AbstractCrudService<T> {
         repository.delete(entity);
     }
 
-    public void delete(String id) {
+    public void deleteById(String id) {
         repository.deleteById(id);
     }
 }
