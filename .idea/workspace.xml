@@ -5,27 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a847a231-7866-4a3f-8ea5-7d413e1f82b9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/dto/CrudPojoDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/model/DepartmentHeadEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/model/pojo/CrudPojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/model/pojo/CrudPojoAb.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/service/common/CRUDService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/model/DepartmentHead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/dto/DepartmentHeadDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/model/TeamLeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/dto/TeamLeader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/model/Workers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/dto/Workers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/model/utils/AssemblySheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/dto/utils/AssemblySheet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/model/utils/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/dto/utils/Date.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/model/utils/Tools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/dto/utils/Tools.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/repository/RepositoryAssemblySheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/repository/RepositoryAssemblySheet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/repository/RepositoryDepartmentHeadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/repository/RepositoryDepartmentHead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/repository/RepositoryTeamLeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/repository/RepositoryTeamLeader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/repository/RepositoryWorkers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/repository/RepositoryWorkers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/service/DepartmentHeadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/service/DepartmentHeadService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/service/TeamLeaderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/service/TeamLeaderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/service/WorkersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/service/WorkersService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/service/common/AbstractCrudService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/service/common/AbstractCrudService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/repository/RepositoryDepartmentHead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/repository/RepositoryDepartmentHead.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -92,7 +72,7 @@
       <updated>1670862325053</updated>
       <workItem from="1670862328332" duration="1501000" />
       <workItem from="1670918253058" duration="9811000" />
-      <workItem from="1670928371070" duration="13147000" />
+      <workItem from="1670928371070" duration="14416000" />
     </task>
     <servers />
   </component>

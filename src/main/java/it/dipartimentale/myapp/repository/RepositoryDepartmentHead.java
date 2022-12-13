@@ -1,8 +1,7 @@
 package it.dipartimentale.myapp.repository;
 
-import it.dipartimentale.myapp.dto.DepartmentHeadDto;
 import it.dipartimentale.myapp.model.DepartmentHeadEntity;
-import org.springframework.data.mongodb.repository.MongoRepository;
+
 
 /**
  * @author : Federico Di Maio
@@ -10,5 +9,5 @@ import org.springframework.data.mongodb.repository.MongoRepository;
  * @Project : my-app
  */
 
-public interface RepositoryDepartmentHead extends MongoRepository<DepartmentHeadDto, String>, IRepository<DepartmentHeadEntity, String> {
+public interface RepositoryDepartmentHead extends IRepository<DepartmentHeadEntity, String> {
 }
