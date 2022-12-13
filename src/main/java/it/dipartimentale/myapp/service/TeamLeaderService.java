@@ -1,6 +1,7 @@
 package it.dipartimentale.myapp.service;
 
 import it.dipartimentale.myapp.model.TeamLeader;
+import it.dipartimentale.myapp.model.utils.AssemblySheet;
 import it.dipartimentale.myapp.service.common.AbstractCrudService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.repository.MongoRepository;
@@ -19,7 +20,11 @@ public class TeamLeaderService extends AbstractCrudService<TeamLeader> {
         super(repository);
     }
 
+    @Override
     public void deleteById(String id) {                 //cancello lavoro a worker
         super.deleteById(id);
     }
+
+
+
 }
