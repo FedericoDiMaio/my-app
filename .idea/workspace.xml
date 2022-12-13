@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a847a231-7866-4a3f-8ea5-7d413e1f82b9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/service/TeamLeaderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/service/common/AbstractCrudService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/model/TeamLeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/model/TeamLeader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/model/Workers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/model/Workers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/model/utils/AssemblySheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/model/utils/AssemblySheet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/model/utils/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/model/utils/Date.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/model/utils/Tools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/model/utils/Tools.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +25,13 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,10 +49,12 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/f.dimaio/IdeaProjects/universita2030/userdata",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "spring.configuration.checksum": "c3a340c944e6cd411ec9e3080d868698"
   }
 }]]></component>
@@ -59,7 +75,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670862325053</updated>
-      <workItem from="1670862328332" duration="1264000" />
+      <workItem from="1670862328332" duration="1501000" />
+      <workItem from="1670918253058" duration="4499000" />
     </task>
     <servers />
   </component>
