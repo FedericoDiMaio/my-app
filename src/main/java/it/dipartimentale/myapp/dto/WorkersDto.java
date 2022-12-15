@@ -3,6 +3,7 @@ package it.dipartimentale.myapp.dto;
 
 import it.dipartimentale.myapp.dto.utils.AssemblySheet;
 import lombok.Data;
+import org.springframework.data.annotation.Id;
 
 import java.io.Serializable;
 import java.util.List;
@@ -14,7 +15,7 @@ import java.util.List;
  */
 @Data
 public class WorkersDto implements Serializable {
-    @org.springframework.data.annotation.Id
+    @Id
     private String Id;
 
     private String name;

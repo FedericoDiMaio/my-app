@@ -5,26 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a847a231-7866-4a3f-8ea5-7d413e1f82b9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/security/Session.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/security/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/repository/GodRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/service/ServiceGod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/service/common/AbstractService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/dto/CrudPojoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/dto/TrackingDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/dto/DepartmentHeadDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/dto/DepartmentHeadDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/dto/TeamLeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/dto/TeamLeaderDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/dto/Workers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/dto/WorkersDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/model/DepartmentHeadEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/model/DepartmentHeadEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/model/pojo/CrudPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/model/pojo/Tracking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/model/pojo/CrudPojoAb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/model/pojo/TrackingAbstract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/repository/IRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/repository/IRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/repository/RepositoryAssemblySheet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/repository/RepositoryDepartmentHead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/repository/RepositoryDepartmentHead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/repository/RepositoryTeamLeader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/repository/RepositoryWorkers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/service/DepartmentHeadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/service/DepartmentHeadService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/service/common/AbstractCrudService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/service/common/AbstractCrudService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/service/common/CRUDService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/service/common/CRUDService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/dto/GodDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/dto/GodDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/dto/TrackingDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/dto/WorkersDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/dipartimentale/myapp/dto/WorkersDto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +71,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/f.dimaio/IdeaProjects/DIMA/tesi/my-app",
+    "last_opened_file_path": "C:/Users/f.dimaio/IdeaProjects/CINECA/backendFormazione/backenduno",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -117,7 +105,7 @@
       <workItem from="1670862328332" duration="1501000" />
       <workItem from="1670918253058" duration="9811000" />
       <workItem from="1670928371070" duration="14416000" />
-      <workItem from="1671102893609" duration="7498000" />
+      <workItem from="1671102893609" duration="10215000" />
     </task>
     <servers />
   </component>
