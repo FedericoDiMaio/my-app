@@ -32,5 +32,4 @@ public abstract class AbstractService<T> {
 
     public abstract List<T> getAllTeamLeader();
 
-
 }
