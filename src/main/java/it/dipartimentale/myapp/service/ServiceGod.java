@@ -6,6 +6,7 @@ import it.dipartimentale.myapp.service.common.AbstractService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -16,30 +17,31 @@ import java.util.List;
 @Service
 public class ServiceGod extends AbstractService {
     @Autowired
-    private GodRepository godRepository;
-
+    public ServiceGod(GodRepository godRepository) {
+        super(godRepository);
+    }
     @Override
-    public GodDto createCompany() {
-        return null;
+    public List<GodDto> createCompany(GodDto godDto){
+        return Collections.singletonList(godRepository.insert(godDto));
     }
 
     @Override
-    public List<GodRepository> getAllMembersCompany() {
-        return null;
+    public List<List<GodDto>> getAllMembersCompany() {
+        return Collections.singletonList(godRepository.findAll());
     }
 
     @Override
-    public List<GodRepository> getAllWorkers() {
-        return null;
+    public List<List<GodDto>> getAllWorkers() {
+        return Collections.singletonList(godRepository.findAll());
     }
 
     @Override
-    public List<GodRepository> getAllTeamLeader() {
-        return null;
+    public List<List<GodDto>> getAllTeamLeader() {
+        return Collections.singletonList(godRepository.findAll());
     }
 
     @Override
-    public List<GodRepository> getAllDepartmentHead() {
-        return null;
+    public List<List<GodDto>> getAllDepartmentHead() {
+        return Collections.singletonList(godRepository.findAll());
     }
 }

@@ -15,13 +15,25 @@ import java.util.Optional;
  */
 
 public abstract class AbstractService<T> {
+
+    protected final GodRepository godRepository;
+
+    protected AbstractService(GodRepository godRepository) {
+        this.godRepository = godRepository;
+    }
+
     public abstract T createCompany();
+
+
+    public abstract List<GodDto> createCompany(GodDto godDto);
+
     public abstract List<T> getAllMembersCompany();
+
     public abstract List<T> getAllWorkers();
+
     public abstract List<T> getAllTeamLeader();
+
     public abstract List<T> getAllDepartmentHead();
-
-
 
 
 }

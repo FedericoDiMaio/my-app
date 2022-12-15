@@ -1,6 +1,7 @@
 package it.dipartimentale.myapp.dto.utils;
 
 import lombok.Data;
+import org.springframework.data.annotation.Id;
 
 import java.io.Serializable;
 import java.util.List;
@@ -13,7 +14,7 @@ import java.util.List;
 
 @Data
 public class AssemblySheet implements Serializable {
-    @org.springframework.data.annotation.Id
+    @Id
     private String Id;
 
     private String nameAssemblySheet;
