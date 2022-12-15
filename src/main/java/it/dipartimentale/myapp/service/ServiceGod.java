@@ -20,8 +20,14 @@ public class ServiceGod extends AbstractService {
     public ServiceGod(GodRepository godRepository) {
         super(godRepository);
     }
+
     @Override
-    public List<GodDto> createCompany(GodDto godDto){
+    public Object createCompany() {                             //???
+        return null;
+    }
+
+    @Override
+    public List<GodDto> createCompany(GodDto godDto) {
         return Collections.singletonList(godRepository.insert(godDto));
     }
 
@@ -40,8 +46,4 @@ public class ServiceGod extends AbstractService {
         return Collections.singletonList(godRepository.findAll());
     }
 
-    @Override
-    public List<List<GodDto>> getAllDepartmentHead() {
-        return Collections.singletonList(godRepository.findAll());
-    }
 }
