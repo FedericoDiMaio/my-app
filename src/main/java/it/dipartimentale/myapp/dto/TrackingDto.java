@@ -7,12 +7,12 @@ import java.util.Date;
 
 /**
  * @author : Federico Di Maio
- * @date : 13/12/2022
+ * {@code @date} : 13/12/2022
  * @Project : my-app
  */
 @Data
 @Builder
-public class CrudPojoDto {
+public class TrackingDto {
 
     private String createdBy;
     private Date createdOn;

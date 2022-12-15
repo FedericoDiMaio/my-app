@@ -13,7 +13,7 @@ import java.util.List;
  * @Project : my-app
  */
 @Data
-public class Workers implements Serializable {
+public class WorkersDto implements Serializable {
     @org.springframework.data.annotation.Id
     private String Id;
 

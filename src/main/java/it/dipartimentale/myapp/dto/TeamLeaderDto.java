@@ -13,7 +13,7 @@ import java.util.List;
  * @Project : my-app
  */
 @Data
-public class TeamLeader implements Serializable {
+public class TeamLeaderDto implements Serializable {
     @Id
     private String Id;
 
@@ -22,7 +22,7 @@ public class TeamLeader implements Serializable {
     private String address;
     private String number;
     private String email;
-    private List<Workers> WorkersSet;
+    private List<WorkersDto> workersDtoSet;
     private List<AssemblySheet> assemblySheetList;
 
 }
