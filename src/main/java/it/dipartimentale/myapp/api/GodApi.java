@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -29,11 +30,11 @@ public class GodApi {
     }
 
     @RequestMapping(value = "/receiveAllMembers", method = RequestMethod.GET)
-    public List<List<GodDto>> getAllMembersCompany() {
+    public List<GodDto> getAllMembersCompany() {
         return serviceGod.getAllMembersCompany();
     }
     @RequestMapping(value = "/createCompany", method = RequestMethod.POST)
-    public List<List<GodDto>> createCompany() {
+    public List<GodDto> createCompany() {
         return serviceGod.createCompany();
     }
 

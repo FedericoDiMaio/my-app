@@ -21,12 +21,15 @@ public abstract class AbstractService<T> {
     protected AbstractService(GodRepository godRepository) {
         this.godRepository = godRepository;
     }
+
     public abstract List<T> getAllMembersCompany();
+
     public abstract List<T> createCompany();
 
     public abstract List<T> getAllWorkers();
+
     public abstract List<T> getAllTeamLeader();
 
     //??
-     public abstract List<GodDto> createCompany(GodDto godDto);
+    public abstract List<GodDto> createCompany(GodDto godDto);
 }

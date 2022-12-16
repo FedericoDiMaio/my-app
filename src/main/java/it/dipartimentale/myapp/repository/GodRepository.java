@@ -14,5 +14,5 @@ import java.util.List;
  */
 @Repository
 public interface GodRepository extends MongoRepository<GodDto, String> {
-    List save();
+
 }
