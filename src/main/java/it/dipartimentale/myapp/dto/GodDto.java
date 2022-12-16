@@ -19,4 +19,5 @@ public class GodDto implements Serializable {
     private List<TeamLeaderDto> teamLeaderDtoList;
     private List<WorkersDto> workersDtoList;
     private List<AssemblySheet> assemblySheetList;
+
 }

@@ -18,17 +18,23 @@ import java.util.List;
  */
 @CrossOrigin
 @RestController
-public class Api {
+@RequestMapping("api/god")
+public class GodApi {
+
     protected final ServiceGod serviceGod;
 
     @Autowired
-    public Api(ServiceGod serviceGod) {
+    public GodApi(ServiceGod serviceGod) {
         this.serviceGod = serviceGod;
     }
 
-
-    @RequestMapping(value = "ok/", method = RequestMethod.GET)
+    @RequestMapping(value = "/receiveAllMembers", method = RequestMethod.GET)
     public List<List<GodDto>> getAllMembersCompany() {
         return serviceGod.getAllMembersCompany();
     }
+    @RequestMapping(value = "/createCompany", method = RequestMethod.POST)
+    public List<List<GodDto>> createCompany() {
+        return serviceGod.createCompany();
+    }
+
 }

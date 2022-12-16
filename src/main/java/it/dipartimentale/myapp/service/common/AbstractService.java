@@ -1,6 +1,7 @@
 package it.dipartimentale.myapp.service.common;
 
 import it.dipartimentale.myapp.dto.GodDto;
+import it.dipartimentale.myapp.dto.WorkersDto;
 import it.dipartimentale.myapp.repository.GodRepository;
 
 
@@ -20,16 +21,12 @@ public abstract class AbstractService<T> {
     protected AbstractService(GodRepository godRepository) {
         this.godRepository = godRepository;
     }
-
-    public abstract T createCompany();
-
-
-    public abstract List<GodDto> createCompany(GodDto godDto);
-
     public abstract List<T> getAllMembersCompany();
+    public abstract List<T> createCompany();
 
     public abstract List<T> getAllWorkers();
-
     public abstract List<T> getAllTeamLeader();
 
+    //??
+     public abstract List<GodDto> createCompany(GodDto godDto);
 }

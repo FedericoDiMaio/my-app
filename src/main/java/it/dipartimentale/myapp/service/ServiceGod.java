@@ -15,35 +15,30 @@ import java.util.List;
  * @Project : my-app
  */
 @Service
-public class ServiceGod extends AbstractService {
+public class ServiceGod extends AbstractService  {
+
     @Autowired
     public ServiceGod(GodRepository godRepository) {
         super(godRepository);
     }
-
     @Override
-    public Object createCompany() {                             //???
-        return null;
+    public List createCompany() {                                                       //ok
+        return godRepository.save();
     }
-
     @Override
-    public List<GodDto> createCompany(GodDto godDto) {
-        return Collections.singletonList(godRepository.insert(godDto));
-    }
-
-    @Override
-    public List<List<GodDto>> getAllMembersCompany() {
+    public List<List<GodDto>> getAllMembersCompany() {                                  // ok
         return Collections.singletonList(godRepository.findAll());
     }
-
-    @Override
-    public List<List<GodDto>> getAllWorkers() {
-        return Collections.singletonList(godRepository.findAll());
-    }
-
     @Override
     public List<List<GodDto>> getAllTeamLeader() {
         return Collections.singletonList(godRepository.findAll());
     }
-
+    @Override
+    public List<List<GodDto>> getAllWorkers() {
+        return Collections.singletonList(godRepository.findAll());
+    }
+    @Override
+    public List<GodDto> createCompany(GodDto godDto) {                                  //no usage
+        return null;
+    }
 }
