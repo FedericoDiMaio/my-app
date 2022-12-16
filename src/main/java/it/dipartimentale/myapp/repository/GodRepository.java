@@ -5,7 +5,6 @@ import it.dipartimentale.myapp.dto.GodDto;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
 
 /**
  * @author : Federico Di Maio

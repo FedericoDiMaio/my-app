@@ -15,7 +15,7 @@ import java.util.List;
  * @Project : my-app
  */
 @Service
-public class ServiceGod extends AbstractService<GodDto> {
+public class ServiceGod extends AbstractService <GodDto> {
 
     @Autowired
     public ServiceGod(GodRepository godRepository) {
@@ -31,15 +31,24 @@ public class ServiceGod extends AbstractService<GodDto> {
     public List<GodDto> getAllMembersCompany() {                                  // ok
         return godRepository.findAll();
     }
+
     @Override
     public List<GodDto> getAllTeamLeader() {
-        return null;
+        return godRepository.findAll();
+    }
+
+    @Override
+    public List<GodDto> getAllAssemblySheet() {
+        return godRepository.findAll();
     }
 
     @Override
     public List<GodDto> getAllWorkers() {
-        return null;
+        return godRepository.findAll();
     }
 
-
+    @Override
+    public List<GodDto> createCompany() {
+        return null;
+    }
 }

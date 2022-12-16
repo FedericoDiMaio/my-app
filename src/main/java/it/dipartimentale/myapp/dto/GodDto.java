@@ -13,7 +13,7 @@ import java.util.List;
  * @Project : my-app
  */
 @Data
-@Document
+@Document ("company")
 public class GodDto implements Serializable {
     private List<DepartmentHeadDto> departmentHeadList;
     private List<TeamLeaderDto> teamLeaderDtoList;

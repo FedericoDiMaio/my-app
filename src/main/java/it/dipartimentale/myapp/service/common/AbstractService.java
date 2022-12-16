@@ -1,7 +1,6 @@
 package it.dipartimentale.myapp.service.common;
 
 import it.dipartimentale.myapp.dto.GodDto;
-import it.dipartimentale.myapp.dto.WorkersDto;
 import it.dipartimentale.myapp.repository.GodRepository;
 
 
@@ -29,6 +28,8 @@ public abstract class AbstractService<T> {
     public abstract List<T> getAllWorkers();
 
     public abstract List<T> getAllTeamLeader();
+
+    public abstract List<T> getAllAssemblySheet();
 
     //??
     public abstract List<GodDto> createCompany(GodDto godDto);
