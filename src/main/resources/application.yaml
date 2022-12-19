@@ -1,7 +1,8 @@
 spring:
   data:
     mongodb:
-      uri: mongodb+srv://FedericoDIMA:<one_punch-dima0331_>@clusterdima.0yj4ube.mongodb.net/test
+      uri: mongodb+srv://FedericoDIMA:one_punch-dima0331_@clusterdima.0yj4ube.mongodb.net/test:27017
+      authentication-database: my-app
 
 server.port: 8080
 

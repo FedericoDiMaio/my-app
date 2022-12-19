@@ -35,12 +35,12 @@ public class GodApi {
         return serviceGod.createCompany();
     }
 
-    @RequestMapping(value = "/receiveAllMembers", method = RequestMethod.GET)
+    @RequestMapping(value = "/getAllMembers", method = RequestMethod.GET)
     public List<GodDto> getAllMembersCompany() {
         return serviceGod.getAllMembersCompany();
     }
 
-    @RequestMapping(value = "/getallTeamLeader", method = RequestMethod.GET)
+    @RequestMapping(value = "/getAllTeamLeader", method = RequestMethod.GET)
     public List<GodDto> getAllTeamLeader() {
         return serviceGod.getAllTeamLeader();
     }

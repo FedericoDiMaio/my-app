@@ -28,7 +28,7 @@ public class ServiceGod extends AbstractService <GodDto> {
     }
 
     @Override
-    public List<GodDto> getAllMembersCompany() {                                  // ok
+    public List<GodDto> getAllMembersCompany() {
         return godRepository.findAll();
     }
 
