@@ -2,7 +2,8 @@ package it.dipartimentale.myapp.repository;
 
 
 import it.dipartimentale.myapp.dto.GodDto;
-import org.springframework.data.mongodb.repository.MongoRepository;
+
+import it.dipartimentale.myapp.repository.common.IRepository;
 import org.springframework.stereotype.Repository;
 
 
@@ -12,6 +13,6 @@ import org.springframework.stereotype.Repository;
  * @Project : my-app
  */
 @Repository
-public interface GodRepository extends MongoRepository<GodDto, String> {
+public interface GodRepository extends IRepository<GodDto, String> {
 
 }
