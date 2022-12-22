@@ -112,7 +112,7 @@ public class GodApi {
         return serviceGod.getDepartmentHead();
     }
 
-    @RequestMapping(value = "/getDepartmentHeadById", method = RequestMethod.GET)
+    @RequestMapping(value = "/getDepartmentHeadById/{id}", method = RequestMethod.GET)
     public Optional<DepartmentHeadDto> getDepartmentHeadById(@PathVariable("id") String id) {
         return serviceGod.getDepartmentHeadForId(id);
     }
