@@ -9,6 +9,7 @@ import it.dipartimentale.myapp.repository.*;
 import it.dipartimentale.myapp.service.common.AbstractService;
 import org.springframework.stereotype.Service;
 
+import java.util.Collections;
 import java.util.List;
 
 
@@ -35,13 +36,18 @@ public class ServiceGod extends AbstractService<AssemblySheet, WorkersDto, TeamL
     }
 
     @Override
+    public List<AssemblySheet> createAssemblySheet(AssemblySheet assemblySheet) {
+        return Collections.singletonList(assemblySheetRepository.insert(assemblySheet));
+    }
+
+    @Override
     public List<AssemblySheet> getAllAssemblySheet() {
         return assemblySheetRepository.findAll();
     }
 
     @Override
-    public List<GodDto> getAllMembersCompany() {
-        return godRepository.findAll();
+    public List<WorkersDto> createWorkers(WorkersDto workersDto) {
+        return Collections.singletonList(workersRepository.insert(workersDto));
     }
 
     @Override
@@ -50,8 +56,18 @@ public class ServiceGod extends AbstractService<AssemblySheet, WorkersDto, TeamL
     }
 
     @Override
+    public List<TeamLeaderDto> createTeamLeader(TeamLeaderDto teamLeaderDto) {
+        return Collections.singletonList(teamLeaderRepository.insert(teamLeaderDto));
+    }
+
+    @Override
     public List<TeamLeaderDto> getAllTeamLeader() {
         return teamLeaderRepository.findAll();
+    }
+
+    @Override
+    public List<DepartmentHeadDto> createDepartementHead(DepartmentHeadDto departmentHeadDto) {
+        return Collections.singletonList(departementHeadRepository.insert(departmentHeadDto));
     }
 
     @Override
@@ -59,5 +75,8 @@ public class ServiceGod extends AbstractService<AssemblySheet, WorkersDto, TeamL
         return departementHeadRepository.findAll();
     }
 
-
+    @Override
+    public List<GodDto> getAllMembersCompany() {
+        return godRepository.findAll();
+    }
 }
