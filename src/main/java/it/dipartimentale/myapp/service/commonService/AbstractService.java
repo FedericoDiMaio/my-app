@@ -1,4 +1,4 @@
-package it.dipartimentale.myapp.service.common;
+package it.dipartimentale.myapp.service.commonService;
 
 import it.dipartimentale.myapp.dto.DepartmentHeadDto;
 import it.dipartimentale.myapp.dto.TeamLeaderDto;

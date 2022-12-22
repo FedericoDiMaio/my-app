@@ -1,4 +1,4 @@
-package it.dipartimentale.myapp.repository.common;
+package it.dipartimentale.myapp.repository.commonRepository;
 
 
 import org.springframework.data.mongodb.repository.MongoRepository;

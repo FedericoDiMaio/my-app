@@ -6,7 +6,7 @@ import it.dipartimentale.myapp.dto.TeamLeaderDto;
 import it.dipartimentale.myapp.dto.WorkersDto;
 import it.dipartimentale.myapp.dto.utils.AssemblySheet;
 import it.dipartimentale.myapp.repository.*;
-import it.dipartimentale.myapp.service.common.AbstractService;
+import it.dipartimentale.myapp.service.commonService.AbstractService;
 import org.springframework.stereotype.Service;
 
 import java.util.Collections;

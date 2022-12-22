@@ -3,7 +3,7 @@ package it.dipartimentale.myapp.repository;
 
 import it.dipartimentale.myapp.dto.GodDto;
 
-import it.dipartimentale.myapp.repository.common.IRepository;
+import it.dipartimentale.myapp.repository.commonRepository.IRepository;
 import org.springframework.stereotype.Repository;
 
 

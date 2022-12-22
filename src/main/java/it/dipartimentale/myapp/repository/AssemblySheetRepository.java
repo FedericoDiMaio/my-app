@@ -1,7 +1,7 @@
 package it.dipartimentale.myapp.repository;
 
 import it.dipartimentale.myapp.dto.utils.AssemblySheet;
-import it.dipartimentale.myapp.repository.common.IRepository;
+import it.dipartimentale.myapp.repository.commonRepository.IRepository;
 
 
 /**
