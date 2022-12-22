@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * @author : Federico Di Maio
@@ -48,6 +49,16 @@ public class GodApi {
         return serviceGod.getAllTeamLeader();
     }
 
+    @RequestMapping(value = "/getTeamLeaderById/{id}", method = RequestMethod.GET)
+    public Optional<TeamLeaderDto> getTeamLeaderById(@PathVariable("id") String id) {
+        return serviceGod.getTeamLeaderForId(id);
+    }
+
+    @RequestMapping(value = "updateTeamLeader/{id}", method = RequestMethod.PUT)
+    public Optional<TeamLeaderDto> updateTeamLeaderById(@PathVariable("id") String id, @RequestBody TeamLeaderDto teamLeaderDto) {
+        return serviceGod.updateTeamLeader(id, teamLeaderDto);
+    }
+
     //WORKERS API
     @RequestMapping(value = "/createWorkers", method = RequestMethod.POST)
     public List<WorkersDto> createWorkers(@RequestBody WorkersDto workersDto) {
@@ -57,6 +68,16 @@ public class GodApi {
     @RequestMapping(value = "/getAllWorkers", method = RequestMethod.GET)
     public List<WorkersDto> getAllWorkers() {
         return serviceGod.getAllWorkers();
+    }
+
+    @RequestMapping(value = "/getWorkersById/{id}", method = RequestMethod.GET)
+    public Optional<WorkersDto> getWorkersById(@PathVariable("id") String id) {
+        return serviceGod.getWorkersForID(id);
+    }
+
+    @RequestMapping(value = "/updateWorkers/{id}", method = RequestMethod.PUT)
+    public Optional<WorkersDto> updateWorkers(@PathVariable("id") String id, @RequestBody WorkersDto workersDto) {
+        return serviceGod.updateWorkers(id, workersDto);
     }
 
     //ASSEMBLY SHEET API
@@ -70,6 +91,16 @@ public class GodApi {
         return serviceGod.getAllAssemblySheet();
     }
 
+    @RequestMapping(value = "/getAssemblySheetById/{id}", method = RequestMethod.GET)
+    public Optional<AssemblySheet> getAssemblySheetById(@PathVariable("id") String id) {
+        return serviceGod.getAssemblySheetForId(id);
+    }
+
+    @RequestMapping(value = "/updateAssemblySheet/{id}", method = RequestMethod.PUT)
+    public Optional<AssemblySheet> updateAssemblySheet(@PathVariable("id") String id, @RequestBody AssemblySheet assemblySheet) {
+        return serviceGod.updateAssemblySheet(id, assemblySheet);
+    }
+
     //DEPARTMENT HEAD API
     @RequestMapping(value = "/createDepartmentHead", method = RequestMethod.POST)
     public List<DepartmentHeadDto> createDepartmentHead(@RequestBody DepartmentHeadDto departmentHeadDto) {
@@ -80,4 +111,16 @@ public class GodApi {
     public List<DepartmentHeadDto> getAllDepartmentHead() {
         return serviceGod.getDepartmentHead();
     }
+
+    @RequestMapping(value = "/getDepartmentHeadById", method = RequestMethod.GET)
+    public Optional<DepartmentHeadDto> getDepartmentHeadById(@PathVariable("id") String id) {
+        return serviceGod.getDepartmentHeadForId(id);
+    }
+
+    @RequestMapping(value = "/updateDepartmentHead/{id}", method = RequestMethod.PUT)
+    public Optional<DepartmentHeadDto> updateDepartmentHead(@PathVariable("id") String id, DepartmentHeadDto departmentHeadDto) {
+        return serviceGod.updateDepartmentHead(id, departmentHeadDto);
+    }
+
+
 }

@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.Optional;
 
 
 /**
@@ -46,6 +47,21 @@ public class ServiceGod extends AbstractService<AssemblySheet, WorkersDto, TeamL
     }
 
     @Override
+    public Optional<AssemblySheet> getAssemblySheetForId(String Id) {
+        return assemblySheetRepository.findById(Id);
+    }
+
+    @Override // manca modifica lista data lista tools da verificare in seguito
+    public Optional<AssemblySheet> updateAssemblySheet(String Id, AssemblySheet assemblySheet) {
+        Optional<AssemblySheet> assemblySheetOptional = assemblySheetRepository.findById(Id);
+        assemblySheetOptional.ifPresent(a -> a.setNameAssemblySheet(assemblySheet.getNameAssemblySheet()));
+        assemblySheetOptional.ifPresent(a -> a.setNumberAssemblySheet(assemblySheet.getNumberAssemblySheet()));
+        assemblySheetOptional.ifPresent(a -> a.setNameWorkerAssigned(assemblySheet.getNameWorkerAssigned()));
+        assemblySheetOptional.ifPresent(a -> assemblySheetRepository.save(a));
+        return assemblySheetOptional;
+    }
+
+    @Override
     public List<WorkersDto> createWorkers(WorkersDto workersDto) {
         return Collections.singletonList(workersRepository.insert(workersDto));
     }
@@ -53,6 +69,23 @@ public class ServiceGod extends AbstractService<AssemblySheet, WorkersDto, TeamL
     @Override
     public List<WorkersDto> getAllWorkers() {
         return workersRepository.findAll();
+    }
+
+    @Override
+    public Optional<WorkersDto> getWorkersForID(String Id) {
+        return workersRepository.findById(Id);
+    }
+
+    @Override // manca modifica sheet
+    public Optional<WorkersDto> updateWorkers(String Id, WorkersDto workersDto) {
+        Optional<WorkersDto> workersDtoOptional = workersRepository.findById(Id);
+        workersDtoOptional.ifPresent(w -> w.setName(workersDto.getName()));
+        workersDtoOptional.ifPresent(w -> w.setSurname(workersDto.getSurname()));
+        workersDtoOptional.ifPresent(w -> w.setAddress(workersDto.getAddress()));
+        workersDtoOptional.ifPresent(w -> w.setNumber(workersDto.getNumber()));
+        workersDtoOptional.ifPresent(w -> w.setEmail(workersDto.getEmail()));
+
+        return workersDtoOptional;
     }
 
     @Override
@@ -66,6 +99,23 @@ public class ServiceGod extends AbstractService<AssemblySheet, WorkersDto, TeamL
     }
 
     @Override
+    public Optional<TeamLeaderDto> getTeamLeaderForId(String Id) {
+        return teamLeaderRepository.findById(Id);
+    }
+
+    @Override // manca modifica workers e sheet
+    public Optional<TeamLeaderDto> updateTeamLeader(String Id, TeamLeaderDto teamLeaderDto) {
+        Optional<TeamLeaderDto> teamLeaderDtoOptional = teamLeaderRepository.findById(Id);
+        teamLeaderDtoOptional.ifPresent(t -> t.setName(teamLeaderDto.getName()));
+        teamLeaderDtoOptional.ifPresent(t -> t.setSurname(teamLeaderDto.getSurname()));
+        teamLeaderDtoOptional.ifPresent(t -> t.setAddress(teamLeaderDto.getAddress()));
+        teamLeaderDtoOptional.ifPresent(t -> t.setNumber(teamLeaderDto.getNumber()));
+        teamLeaderDtoOptional.ifPresent(t -> t.setEmail(teamLeaderDto.getEmail()));
+
+        return teamLeaderDtoOptional;
+    }
+
+    @Override
     public List<DepartmentHeadDto> createDepartementHead(DepartmentHeadDto departmentHeadDto) {
         return Collections.singletonList(departementHeadRepository.insert(departmentHeadDto));
     }
@@ -73,6 +123,23 @@ public class ServiceGod extends AbstractService<AssemblySheet, WorkersDto, TeamL
     @Override
     public List<DepartmentHeadDto> getDepartmentHead() {
         return departementHeadRepository.findAll();
+    }
+
+    @Override
+    public Optional<DepartmentHeadDto> getDepartmentHeadForId(String Id) {
+        return departementHeadRepository.findById(Id);
+    }
+
+    @Override // manca modifica leader, workers, sheet
+    public Optional<DepartmentHeadDto> updateDepartmentHead(String Id, DepartmentHeadDto departmentHeadDto) {
+        Optional<DepartmentHeadDto> departmentHeadDtoOptional = departementHeadRepository.findById(Id);
+        departmentHeadDtoOptional.ifPresent(d -> d.setName(departmentHeadDto.getName()));
+        departmentHeadDtoOptional.ifPresent(d -> d.setSurname(departmentHeadDto.getSurname()));
+        departmentHeadDtoOptional.ifPresent(d -> d.setAddress(departmentHeadDto.getAddress()));
+        departmentHeadDtoOptional.ifPresent(d -> d.setNumber(departmentHeadDto.getNumber()));
+        departmentHeadDtoOptional.ifPresent(d -> d.setEmail(departmentHeadDto.getEmail()));
+
+        return departmentHeadDtoOptional;
     }
 
     @Override

@@ -8,6 +8,7 @@ import it.dipartimentale.myapp.repository.*;
 
 
 import java.util.List;
+import java.util.Optional;
 
 
 /**
@@ -43,16 +44,36 @@ public abstract class AbstractService<T0, T1, T2, T3, T4> {
     }
 
     public abstract List<T0> createAssemblySheet(AssemblySheet assemblySheet);
+
     public abstract List<T0> getAllAssemblySheet();
 
+    public abstract Optional<T0> getAssemblySheetForId(String Id);
+
+    public abstract Optional<T0> updateAssemblySheet(String Id, AssemblySheet assemblySheet);
+
     public abstract List<T1> createWorkers(WorkersDto workersDto);
+
     public abstract List<T1> getAllWorkers();
 
+    public abstract Optional<T1> getWorkersForID(String Id);
+
+    public abstract Optional<T1> updateWorkers(String Id, WorkersDto workersDto);
+
     public abstract List<T2> createTeamLeader(TeamLeaderDto teamLeaderDto);
+
     public abstract List<T2> getAllTeamLeader();
 
+    public abstract Optional<T2> getTeamLeaderForId(String Id);
+
+    public abstract Optional<T2> updateTeamLeader(String Id, TeamLeaderDto teamLeaderDto);
+
     public abstract List<T3> createDepartementHead(DepartmentHeadDto departmentHeadDto);
+
     public abstract List<T3> getDepartmentHead();
+
+    public abstract Optional<T3> getDepartmentHeadForId(String Id);
+
+    public abstract Optional<T3> updateDepartmentHead(String Id, DepartmentHeadDto departmentHeadDto);
 
     public abstract List<T4> getAllMembersCompany();
 
