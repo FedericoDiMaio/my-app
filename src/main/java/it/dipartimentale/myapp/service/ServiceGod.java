@@ -1,13 +1,16 @@
 package it.dipartimentale.myapp.service;
 
+import it.dipartimentale.myapp.dto.DepartmentHeadDto;
 import it.dipartimentale.myapp.dto.GodDto;
-import it.dipartimentale.myapp.repository.GodRepository;
+import it.dipartimentale.myapp.dto.TeamLeaderDto;
+import it.dipartimentale.myapp.dto.WorkersDto;
+import it.dipartimentale.myapp.dto.utils.AssemblySheet;
+import it.dipartimentale.myapp.repository.*;
 import it.dipartimentale.myapp.service.common.AbstractService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Collections;
 import java.util.List;
+
 
 /**
  * @author : Federico Di Maio
@@ -15,16 +18,25 @@ import java.util.List;
  * @Project : my-app
  */
 @Service
-public class ServiceGod extends AbstractService <GodDto> {
+public class ServiceGod extends AbstractService<AssemblySheet, WorkersDto, TeamLeaderDto, DepartmentHeadDto, GodDto> {
 
-    @Autowired
-    public ServiceGod(GodRepository godRepository) {
-        super(godRepository);
+    protected DepartementHeadRepository departementHeadRepository;
+    protected TeamLeaderRepository teamLeaderRepository;
+    protected WorkersRepository workersRepository;
+    protected GodRepository godRepository;
+    protected AssemblySheetRepository assemblySheetRepository;
+
+    protected ServiceGod(GodRepository godRepository,
+                         TeamLeaderRepository teamLeaderRepository,
+                         WorkersRepository workersRepository,
+                         DepartementHeadRepository departementHeadRepository,
+                         AssemblySheetRepository assemblySheetRepository) {
+        super(assemblySheetRepository, godRepository, teamLeaderRepository, workersRepository, departementHeadRepository);
     }
 
     @Override
-    public List<GodDto> createCompany(GodDto dto) {
-        return Collections.singletonList(godRepository.save(dto));
+    public List<AssemblySheet> getAllAssemblySheet() {
+        return assemblySheetRepository.findAll();
     }
 
     @Override
@@ -33,22 +45,19 @@ public class ServiceGod extends AbstractService <GodDto> {
     }
 
     @Override
-    public List<GodDto> getAllTeamLeader() {
-        return godRepository.findAll();
+    public List<WorkersDto> getAllWorkers() {
+        return workersRepository.findAll();
     }
 
     @Override
-    public List<GodDto> getAllAssemblySheet() {
-        return godRepository.findAll();
+    public List<TeamLeaderDto> getAllTeamLeader() {
+        return teamLeaderRepository.findAll();
     }
 
     @Override
-    public List<GodDto> getAllWorkers() {
-        return godRepository.findAll();
+    public List<DepartmentHeadDto> getDepartmentHead() {
+        return departementHeadRepository.findAll();
     }
 
-    @Override
-    public List<GodDto> createCompany() {
-        return null;
-    }
+
 }

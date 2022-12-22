@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -14,7 +15,7 @@ import java.util.List;
  */
 @Data
 @Builder
-public class DepartmentHeadDto {
+public class DepartmentHeadDto implements Serializable {
     @Id
     private String id;
     private String name;

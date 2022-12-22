@@ -13,11 +13,10 @@ import java.util.List;
  * @Project : my-app
  */
 @Data
-@Document ("company")
+@Document("company")
 public class GodDto implements Serializable {
-    private List<DepartmentHeadDto> departmentHeadList;
-    private List<TeamLeaderDto> teamLeaderDtoList;
-    private List<WorkersDto> workersDtoList;
-    private List<AssemblySheet> assemblySheetList;
-
+    public List<DepartmentHeadDto> departmentHeadList;
+    public List<TeamLeaderDto> teamLeaderDtoList;
+    public List<WorkersDto> workersDtoList;
+    public List<AssemblySheet> assemblySheetList;
 }
