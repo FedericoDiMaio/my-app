@@ -5,6 +5,7 @@ import it.dipartimentale.myapp.dto.GodDto;
 import it.dipartimentale.myapp.dto.TeamLeaderDto;
 import it.dipartimentale.myapp.dto.WorkersDto;
 import it.dipartimentale.myapp.dto.utils.AssemblySheet;
+import it.dipartimentale.myapp.dto.utils.Tools;
 import it.dipartimentale.myapp.service.ServiceGod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -72,7 +73,7 @@ public class GodApi {
 
     @RequestMapping(value = "/getWorkersById/{id}", method = RequestMethod.GET)
     public Optional<WorkersDto> getWorkersById(@PathVariable("id") String id) {
-        return serviceGod.getWorkersForID(id);
+        return serviceGod.getWorkersForId(id);
     }
 
     @RequestMapping(value = "/updateWorkers/{id}", method = RequestMethod.PUT)
@@ -104,7 +105,7 @@ public class GodApi {
     //DEPARTMENT HEAD API
     @RequestMapping(value = "/createDepartmentHead", method = RequestMethod.POST)
     public List<DepartmentHeadDto> createDepartmentHead(@RequestBody DepartmentHeadDto departmentHeadDto) {
-        return serviceGod.createDepartementHead(departmentHeadDto);
+        return serviceGod.createDepartmentHead(departmentHeadDto);
     }
 
     @RequestMapping(value = "/getAllDepartementHead", method = RequestMethod.GET)
@@ -122,5 +123,20 @@ public class GodApi {
         return serviceGod.updateDepartmentHead(id, departmentHeadDto);
     }
 
+    //TOOLS API
+    @RequestMapping(value = "/createTools", method = RequestMethod.POST)
+    public List<Tools> createTools(@RequestBody Tools tools) {
+        return serviceGod.createTools(tools);
+    }
+
+    @RequestMapping(value = "/getAllTools", method = RequestMethod.GET)
+    public List<Tools> getAllTools() {
+        return serviceGod.getTools();
+    }
+
+    @RequestMapping(value = "/getToolsById", method = RequestMethod.GET)
+    public Optional<Tools> getToolsById(@PathVariable("Id") String id) {
+        return serviceGod.getToolsById(id);
+    }
 
 }

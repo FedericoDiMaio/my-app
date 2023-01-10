@@ -14,7 +14,6 @@ import java.io.Serializable;
 public class Tools implements Serializable {
     @Id
     private String id;
-
     private String nameTools;
 
 }
